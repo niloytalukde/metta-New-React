@@ -1,25 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/logo.png";
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="h-[70px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-30 bg-gradient-to-r from-indigo-700 to-violet-500 transition-all">
+    <nav className="h-[90px] relative w-full px-6 md:px-16 lg:px-24 xl:px-32 flex items-center justify-between z-30 bg-gradient-to-r from-indigo-700 to-violet-500 transition-all">
       <Link to="/">
         {/* Logo */}
-        <svg
-          width="157"
-          height="40"
-          viewBox="0 0 157 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {/* Use your actual logo or SVG here */}
-          <text x="0" y="25" fill="white" fontSize="20">
-            MyLogo
-          </text>
-        </svg>
+        <img src={logo} alt="" className="h-20" />
       </Link>
 
       {/* Desktop Menu */}
