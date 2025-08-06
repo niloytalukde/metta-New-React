@@ -12,28 +12,28 @@ const Footer = () => {
           Home
         </Link>
         <Link
-          to="/about"
+          to="/Blogs"
           className="font-medium text-gray-500 hover:text-black transition-all"
         >
-          About
+          Blogs
         </Link>
         <Link
-          to="/services"
+          to="/News"
           className="font-medium text-gray-500 hover:text-black transition-all"
         >
-          Services
+          News
+        </Link>
+        <Link
+          to="/contact"
+          className="font-medium text-gray-500 hover:text-black transition-all"
+        >
+          About Us
         </Link>
         <Link
           to="/contact"
           className="font-medium text-gray-500 hover:text-black transition-all"
         >
           Contact
-        </Link>
-        <Link
-          to="/help"
-          className="font-medium text-gray-500 hover:text-black transition-all"
-        >
-          Help
         </Link>
       </div>
 
@@ -60,16 +60,24 @@ const Footer = () => {
       </div>
 
       <p className="mt-8 text-center">
-        Copyright © 2025{" "}
+        © 2025{" "}
         <a
-          href="https://prebuiltui.com"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
         >
-          PrebuiltUI
+          Metta Dhamma
         </a>
-        . All rights reserved.
+        . All rights reserved. Designed by{" "}
+        <a
+          href="https://makeupcoders.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-blue-400"
+        >
+          makeupcoders
+        </a>
       </p>
     </footer>
   );

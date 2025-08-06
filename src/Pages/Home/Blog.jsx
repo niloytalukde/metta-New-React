@@ -65,7 +65,7 @@ const Blog = () => {
                 {blog.content}
               </p>
               <Link to={`/blog/${blog._id}`}>
-                <button className="bg-gradient-to-r mt-4 from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition">
+                <button className="bg-gradient-to-r cursor-pointer mt-4 from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition">
                   Learn More
                 </button>
               </Link>
@@ -76,7 +76,7 @@ const Blog = () => {
         {/* Read All Button */}
         <div className="flex justify-center mt-10">
           <Link to="/Blogs">
-            <button className="bg-gradient-to-r from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition">
+            <button className="bg-gradient-to-r cursor-pointer from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition">
               Read All
             </button>
           </Link>

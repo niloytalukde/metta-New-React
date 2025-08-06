@@ -97,7 +97,7 @@ const BlogPage = () => {
                     >
                       <button
                         type="button"
-                        className="bg-gradient-to-r from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition w-full mt-4"
+                        className="bg-gradient-to-r cursor-pointer from-purple-600 to-blue-500 px-6 py-2 rounded text-white font-medium hover:opacity-90 transition w-full mt-4"
                       >
                         Learn More
                       </button>
