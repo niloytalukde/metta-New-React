@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import facebook from "../assets/Facebook.png";
+import youtube from "../assets/Youtube.png";
+import instagram from "../assets/Insttagram.png";
+const logo = [facebook, youtube, instagram];
 
 const Footer = () => {
   return (
@@ -39,22 +43,13 @@ const Footer = () => {
 
       <div className="flex items-center gap-4 mt-8 text-indigo-500">
         {/** Replace `#` with actual links if needed */}
-        {["#", "#", "#", "#", "#"].map((link, index) => (
+        {logo.map((link, index) => (
           <a
             key={index}
             href={link}
             className="hover:-translate-y-0.5 transition-all duration-300"
           >
-            {/* Replace with actual SVG icons or use react-icons */}
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <circle
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="2"
-              />
-            </svg>
+            <img src={link} alt="icon" width={24} height={24} />
           </a>
         ))}
       </div>
