@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
 
       <p className="mt-8 text-center">
-        © 2025{" "}
+        © 2025
         <a
           href="/"
           target="_blank"
